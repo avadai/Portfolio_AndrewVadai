@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <style>
+        body {
+        font-family: "Audiowide", sans-serif;
+        }
+    </style>
+    <title>Andrew Vadai Portfolio Site</title>
+</head>
+<body style="background-image: url('/img/agalaxy.jpg');">
+    <div id="particles-js">
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+        <script type="text/javascript">
+        const options = {
+        particles: {
+          move: {
+            direction: "right",
+            straight: true,
+            enable: true, 
+            speed: { min: 1, max: 3 }, 
+          },
+          number: {
+            value: 200,
+            density: {
+            enable: true,
+            area: 300
+            }
+        },
+          color: {
+            value: "#FEFEFE"
+          },
+          opacity: {
+            value: { min: 0.5, max: 1 }, 
+          },
+          size: {
+            value: { min: 1, max: 3 }, 
+          },
+          zIndex: {
+            value: { min: 0, max: 100 },
+          },
+        },
+      };
+
+      
+      tsParticles.load("tsparticles", options);
+        </script>
+
+        <div class="uppercase text-2xl ml-10 mt-8 text-sky-500">Andrew Vadai</div>
+        <div class="flex justify-center items-center content-center">
+            <div class="flex -mt-16">
+                <a href="Home.html" class="uppercase text-lg mt-8 p-2 text-sky-500 cursor-pointer border-2 border-sky-500 rounded-lg hover:animate-pulse hover:bg-black">Home</a>
+                <a href="About.html" class="uppercase text-lg ml-10 mt-8 p-2 text-sky-500 cursor-pointer border-2 border-sky-500 rounded-lg hover:animate-pulse hover:bg-black">About</a>
+                <a href="Resume.html" class="uppercase text-lg ml-10 mt-8 p-2 text-sky-500 cursor-pointer border-2 border-sky-500 rounded-lg hover:animate-pulse hover:bg-black">Resume</a>
+                <a href="Contact.html" class="uppercase text-lg ml-10 mt-8 p-2 text-sky-500 cursor-pointer border-2 border-sky-500 rounded-lg hover:animate-pulse hover:bg-black">Contact Me</a>
+            </div>
+        </div>
+        <div class="flex justify-center items-center content-center">
+            <div class="z-50 bg-sky-500 p-3 mt-20 rounded-l-lg">
+                <h1 class="uppercase text-black text-xl">For any questions, leave your information here.</h1>
+                <form action="/action_page.php" class="mt-4">
+                    <div class="flex">
+                        <div class="flex-col">
+                            <label for="fname">First name:</label>
+                            <br>
+                            <input class="px-2" type="text" id="fname" name="fname"><br><br>
+                            <label for="lname">Last name:</label>
+                            <br>
+                            <input class="px-2" type="text" id="lname" name="lname"><br><br>
+                            <label for="email">Email:</label>
+                            <br>
+                            <input class="px-2" type="text" id="email" name="email"><br><br>
+                            <input class="border-2 border-black px-2 cursor-pointer" type="submit" value="Submit">
+                        </div>
+                            <div class="ml-10">
+                                <label for="comments">Comments:</label>
+                                <br>
+                                <textarea placeholder="Write your questions and concerns here" class="h-3/4 w-96 px-2" type="text" id="comments" name="comments"></textarea><br><br>
+                            </div>
+                    </div>
+                </form>
+            </div>
+            <div class="z-50 bg-black p-3 mt-20 h-80 rounded-r-lg">
+                <h1 class="uppercase text-sky-500 text-xl">My contact Information</h1>
+                <br>
+                <p class="text-white text-xl">EMAIL: awvadai@gmail.com</p>
+                <br>
+                <p class="text-white text-xl">PHONE: (405) 404-8888</p>
+                <br>
+                <p class="text-white text-xl">ADDRESS: Shared only if required</p>
+            </div>
+        </div>
+        <footer id="footer" class="flex absolute inset-x-0 bottom-3 border-t-2 border-sky-500 justify-center items-center content-center">
+            <p class="text-white text-xl">Created by Andrew Vadai 2023</p>
+        </footer>
+    </div>
+</body>
+</html>
