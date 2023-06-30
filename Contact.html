@@ -5,10 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
         font-family: "Audiowide", sans-serif;
         }
+
+        .fa {
+          padding: 10px;
+          font-size: 30px;
+          width: 50px;
+          text-align: center;
+          text-decoration: none;
+          margin: 5px 2px;
+        }
+
+        .fa:hover {
+          opacity: 0.7;
+        }
+
+        .fa-google {
+          background: #dd4b39;
+          color: white;
+        }
+
+        .fa-linkedin {
+          background: #007bb5;
+          color: white;
+        }
+
+        .fa-instagram {
+          background: #125688;
+          color: white;
+        }
+
     </style>
     <title>Andrew Vadai Portfolio Site</title>
 </head>
@@ -50,52 +80,56 @@
       tsParticles.load("tsparticles", options);
         </script>
 
-        <div class="uppercase text-2xl ml-10 mt-8 text-sky-500">Andrew Vadai</div>
+        <div class="z-50 uppercase text-2xl ml-10 mt-8 text-sky-500">Andrew Vadai</div>
         <div class="flex justify-center items-center content-center">
             <div class="flex -mt-16">
-                <a href="Home.html" class="uppercase text-lg mt-8 p-2 text-sky-500 cursor-pointer border-2 border-sky-500 rounded-lg hover:animate-pulse hover:bg-black">Home</a>
-                <a href="About.html" class="uppercase text-lg ml-10 mt-8 p-2 text-sky-500 cursor-pointer border-2 border-sky-500 rounded-lg hover:animate-pulse hover:bg-black">About</a>
-                <a href="Resume.html" class="uppercase text-lg ml-10 mt-8 p-2 text-sky-500 cursor-pointer border-2 border-sky-500 rounded-lg hover:animate-pulse hover:bg-black">Resume</a>
-                <a href="Contact.html" class="uppercase text-lg ml-10 mt-8 p-2 text-sky-500 cursor-pointer border-2 border-sky-500 rounded-lg hover:animate-pulse hover:bg-black">Contact Me</a>
+                <a href="Home.html" class="z-50 uppercase text-lg mt-8 p-2 text-sky-500 cursor-pointer border-2 border-sky-500 rounded-lg hover:animate-pulse hover:bg-black">Home</a>
+                <a href="About.html" class="z-50 uppercase text-lg ml-10 mt-8 p-2 text-sky-500 cursor-pointer border-2 border-sky-500 rounded-lg hover:animate-pulse hover:bg-black">About</a>
+                <a href="Resume.html" class="z-50 uppercase text-lg ml-10 mt-8 p-2 text-sky-500 cursor-pointer border-2 border-sky-500 rounded-lg hover:animate-pulse hover:bg-black">Resume</a>
+                <a href="Contact.html" class="z-50 uppercase text-lg ml-10 mt-8 p-2 text-sky-500 cursor-pointer border-2 border-sky-500 rounded-lg hover:animate-pulse hover:bg-black">Contact Me</a>
             </div>
         </div>
-        <div class="flex justify-center items-center content-center">
-            <div class="z-50 bg-sky-500 p-3 mt-20 rounded-l-lg">
-                <h1 class="uppercase text-black text-xl">For any questions, leave your information here.</h1>
-                <form action="/action_page.php" class="mt-4">
-                    <div class="flex">
+        <div class="flex justify-center items-center content-center mt-20">
+            <div class="z-50 bg-black p-5 mt-20 rounded-l-lg">
+                <h1 class="uppercase text-orange-400 text-xl">For any questions, leave your information here.</h1>
+                <form action="/action_page.php" class="mt-5">
+                    <div class="flex h-screen">
                         <div class="flex-col">
-                            <label for="fname">First name:</label>
+                            <label for="fname" class="text-orange-400">First name:</label>
                             <br>
                             <input class="px-2" type="text" id="fname" name="fname"><br><br>
-                            <label for="lname">Last name:</label>
+                            <label for="lname" class="text-orange-400">Last name:</label>
                             <br>
                             <input class="px-2" type="text" id="lname" name="lname"><br><br>
-                            <label for="email">Email:</label>
+                            <label for="email" class="text-orange-400">Email:</label>
                             <br>
                             <input class="px-2" type="text" id="email" name="email"><br><br>
-                            <input class="border-2 border-black px-2 cursor-pointer" type="submit" value="Submit">
+                            <input class="border-2 border-sky-500 text-orange-400 p-3 rounded-lg cursor-pointer hover:text-sky-500 hover:border-white" type="submit" value="Submit">
                         </div>
                             <div class="ml-10">
-                                <label for="comments">Comments:</label>
+                                <label for="comments" class="text-orange-400">Comments:</label>
                                 <br>
                                 <textarea placeholder="Write your questions and concerns here" class="h-3/4 w-96 px-2" type="text" id="comments" name="comments"></textarea><br><br>
                             </div>
                     </div>
                 </form>
             </div>
-            <div class="z-50 bg-black p-3 mt-20 h-80 rounded-r-lg">
-                <h1 class="uppercase text-sky-500 text-xl">My contact Information</h1>
+            <div class="z-50 bg-black p-3 ml-10 mt-20">
+                <h1 class="uppercase text-orange-400 text-xl">My contact Information</h1>
                 <br>
                 <p class="text-white text-xl">EMAIL: awvadai@gmail.com</p>
                 <br>
                 <p class="text-white text-xl">PHONE: (405) 404-8888</p>
                 <br>
-                <p class="text-white text-xl">ADDRESS: Shared only if required</p>
+                <p class="text-white text-xl">ADDRESS: Shared only if required</p><br><br>
+
+                <h1 class="uppercase text-orange-400 text-xl">Visit my Social Media pages</h1><br>
+                <a href="https://www.linkedin.com/in/andrew-vadai/" class="fa fa-linkedin"></a>
+                <a href="https://www.instagram.com/andrew_vadai/" class="fa fa-instagram"></a>
             </div>
         </div>
         <footer id="footer" class="flex absolute inset-x-0 bottom-3 border-t-2 border-sky-500 justify-center items-center content-center">
-            <p class="text-white text-xl">Created by Andrew Vadai 2023</p>
+            <p class="text-sky-500 text-3xl">Created by Andrew Vadai 2023</p>
         </footer>
     </div>
 </body>
